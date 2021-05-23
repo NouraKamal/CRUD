@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <!-- <div class="w-75 m-auto p-3">
+<label for="userName">user name</label>
+<input type="text" id="userName" class="form-control">
+<button onclick="sayhello ();" type="submit" class="btn btn-info my-2">say hello</button>
+     </div> -->
+
+    <!-- part9 -->
+    <!-- <div class="w-75 m-auto py-5 ">
+        <div class="form-groub">
+            <label for="productName">product name</label>
+            <input type="text" id="productName" class="form-control">
+        </div>
+        <div class="form-groub">
+            <label for="productPrice">product price</label>
+            <input type="number" id="productPrice" class="form-control">
+        </div>
+        <div class="form-groub">
+            <label for="productCategory">product category</label>
+            <input type="text" id="productcategory" class="form-control">
+        </div>
+
+        <div class="form-groub">
+            <label for="productDesc">product describtion</label>
+            <textarea type="text" id="productDesc" class="form-control"></textarea>
+        </div>
+        <button id="mainBtn" onclick="addProduct();" class="btn btn-outline-info my-2">add Product</button>
+    </div>
+    <div class="w-75 m-auto py-3 ">
+        <input onkeyup="searchProducts(this.value);" type="text" class="form-control w-75 m-auto"
+            placeholder="search..." id="seachInput">
+        <table class="table my-5 text-center">
+            <thead>
+                <th>index</th>
+                <th>productName</th>
+                <th>productPrice</th>
+                <th>productCategory</th>
+                <th>productDesc</th>
+                <th>update</th>
+                <th>delete</th>
+            </thead>
+            <tbody id="table-body">
+
+            </tbody>
+        </table>
+    </div> -->
+
+    <div class="w-75 m-auto py-3">
+       
+        <div class="form-group">
+<label for="productName">product Name</label>
+<input type="text" id="productName" class="form-control">
+<div class="alert alert-danger d-none" id="alert">
+    <p>user name must start with uppercase and then from 3 to 8</p>
+</div>
+</div>
+<div class="form-group">
+    <label for="productPrice">Product Price</label>
+    <input type="number" id="productPrice" class="form-control">
+</div>
+<div class="form-group">
+    <label for="productCategory">Product Category</label>
+    <input type="text" id="productCategory" class="form-control">
+</div>
+<div class="form-group">
+    <label for="productDescription">Product Description</label>
+    <textarea type="text" id="productDescription" class="form-control"></textarea>
+</div>
+<button onclick="addProduct();" class="btn btn-info" id="mainBtn">add Product</button>
+    </div>
+    <div class="w-75 py-3 m-auto">
+        <div class="form-group">
+<label for="search-input"></label>
+<input type="text" onkeyup="searchProduct(this.value);" class="form-control w-75 m-auto" placeholder="search....">
+</div>
+<table class="table text-center">
+<thead>
+    <th>index</th>
+    <th> Name</th>
+    <th>Price</th>
+    <th>Category</th>
+    <th>Desc</th>
+    <th>update</th>
+    <th>delete</th>
+</thead>
+<tbody id="table-body">
+
+</tbody>
+</table>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
